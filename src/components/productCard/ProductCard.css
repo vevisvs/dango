@@ -2,23 +2,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
-    height: 90vh;
+    height: 100vh;
 }
 
 .ctn-cards{
     width: 900px;
-    height: 850px;
+    height: 800px;
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem;
     gap: 15px;
 }
 
 .card{
     border: 2px solid black;
     width: 200px;
-    height: 400px;
+    height: 49%;
     padding: 1rem;
 }
 
@@ -76,5 +74,18 @@
 .card .expanded-item{
     margin: 10px 0 0;
     text-align: center;
+}
+
+@media screen and (max-width: 480px){
+    .ctn-cards{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .ctn-body{
+        height: 100vh;
+        margin: 1.5rem 0 0;
+    }
 }
 

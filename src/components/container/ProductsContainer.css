@@ -1,7 +1,8 @@
 .main-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    height: 100vh;
 }
 
 .btn-container{
@@ -18,4 +19,16 @@
 .list-sizes{
     margin: 0 0.9rem 0;
     border: 2px solid silver;
+}
+
+@media screen and (min-width: 1440px){
+    .main-container{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .main-container{
+        height: 900px;
+    }
 }
